@@ -1,0 +1,119 @@
+<header class="fixed navbr  transition-transform duration-700 ease-in-out w-[full]  h-16  z-50  right-0 left-0 flex flex-row justify-between items-center px-10 bg-white dark:bg-gray-900  " [class.-translate-y-full]="isHidden" >
+    <div class="w-[20%] h-[80%] flex items-center justify-center ">
+        <div class="logo  items-center justify-center flex w-fit h-[100%] px-3 skew-x-[-20deg]">
+            <span class=" ll font-bold text-2xl text-gray-900 dark:text-white  ">
+                Tommy<span class="text-[#2563EB]">Dev23 </span> 
+            </span>
+        </div>
+
+    </div>
+
+    <div class=" w-[70%] flex-grow max-w-[700px] h-[90%] rounded-full    overflow-hidden px-2 lg:hidden sm:hidden xs:hidden tiny:hidden md:hidden   ">
+
+        <ul class="flex flex-row justify-between items-center w-full  h-full gap-1">
+            <li routerLink="/" [fragment]="'hero'"  routerLinkActive="bactive"   [routerLinkActiveOptions]="{ exact: false }" class="list" ><a >Home</a></li>
+            <li routerLink="/" [fragment]="'about'"  routerLinkActive="bactive"   [routerLinkActiveOptions]="{ exact: false }" class="list" ><a >About</a></li>
+            <li routerLink="/" [fragment]="'project'"   routerLinkActive="bactive"   [routerLinkActiveOptions]="{ exact: false }" class="list" ><a >Project</a></li>
+
+            <li routerLink="/" [fragment]="'skills'" routerLinkActive="bactive"   [routerLinkActiveOptions]="{ exact: false }" class="list" ><a >Skills</a></li>
+            <li routerLink="/" [fragment]="'contact'"   routerLinkActive="bactive"   [routerLinkActiveOptions]="{ exact: false }" class="li bg-[#2563EB] rounded-full px-2 flex items-center justify-between w-[24%] max-w-[180px] h-[80%] text-white font-semibold group" ><a >
+                Contact Me</a>
+                        <div class=" p-2 rounded-full mr-[-2px] bg-white/90 backdrop-blur-sm group-hover:scale-110 transition-transform">
+                        <lucide-icon [img]="Phone" class="w-5 h-5  text-[#2563EB] "></lucide-icon>
+
+                        </div>
+
+
+
+    
+                    </li>
+                    <div>
+                                  <button class="bg-[#2563EB] size-10 rounded-full p-3 flex items-center justify-center text-white border-0 ">
+                                    <lucide-icon [img]="icon" class="w-5 h-5   "(click)="toggleTheme()"></lucide-icon>
+  </button>
+
+                    </div>
+
+
+        </ul>
+
+
+    </div>
+<!-- <div class="flex items-center justify-center w-[20%] h-[90%] ">
+    <button class="contact  h-full flex items-center px-4 w rounded-full w-[166px] bg-white ">
+        <span class="text-black font-sans font-semibold flex justify-between items-center flex-row">
+            Contact Me
+                
+
+        </span>
+    </button>
+</div> -->
+<div class="2xl:hidden xl:hidden" >
+    <lucide-icon [img]="Menu" [size]="30" class="text-gray-900 dark:text-white" (click)="toggle()"></lucide-icon>
+</div>
+
+
+
+
+
+</header>
+
+<div class=" overlay  opacity-0 hidden   fixed top-0 left-0 right-0 bottom-0 bg-black/50 z-[999] transition-opacity duration-300 ease-in-out backdrop-blur-sm " [class.hid]="isOpen()" (click)="toggle()" >
+
+</div>
+<!-- Sidebar Container -->
+<div class=" 2xl:hidden xl:hidden  translate-x-[-100%]   fixed top-0 bottom-0 h-full w-[280px] bg-white dark:bg-gray-900 shadow-lg z-[1000] duration-300 ease-in-out  " [class.open]="isOpen()">
+
+  <!-- Top Section -->
+  <div class="flex items-center justify-between h-16 px-4 border-b border-gray-200 dark:border-gray-700">
+    <!-- Logo -->
+    <div class="flex items-center">
+      <span class="font-bold text-2xl text-gray-900 dark:text-white">
+        Tommy<span class="text-[#2563EB]">Dev23</span>
+      </span>
+    </div>
+
+    <!-- Dark/Light Mode Toggle -->
+    <button 
+      class="bg-[#2563EB] size-10 rounded-full flex items-center justify-center text-white hover:bg-[#1E4DB7] transition"
+      (click)="toggleTheme()">
+      <lucide-icon [img]="icon" class="w-5 h-5"></lucide-icon>
+    </button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="mt-6 px-4" (click)="pada()">
+    <ul class="space-y-4">
+      <li class="rot">
+        <a  routerLink="/" fragment="hero" routerLinkActive="guy" [routerLinkActiveOptions]="{exact: false}" class="flex items-center gap-3 text-gray-800 dark:text-gray-200 hover:text-[#2563EB] transition">
+          <lucide-icon [img]="User" class="w-5 h-5"></lucide-icon>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="rot">
+        <a class="text-"  routerLink="/" fragment="about" routerLinkActive="guy" [routerLinkActiveOptions]="{exact: false}" class="flex items-center gap-3 text-gray-800 dark:text-gray-200 hover:text-[#2563EB] transition">
+          <lucide-icon [img]="User" class="w-5 h-5"></lucide-icon>
+          <span>About</span>
+        </a>
+      </li>
+      <li class="rot">
+        <a   routerLink="/" fragment="project" routerLinkActive="guy" [routerLinkActiveOptions]="{exact: false}"class="flex items-center gap-3 text-gray-800 dark:text-gray-200 hover:text-[#2563EB] transition">
+          <lucide-icon [img]="Folder" class="w-5 h-5"></lucide-icon>
+          <span>Projects</span>
+        </a>
+      </li>
+      <li class="rot">
+        <a   routerLink="/" fragment="skill" routerLinkActive="guy" [routerLinkActiveOptions]="{exact: false}" class="flex items-center gap-3 text-gray-800 dark:text-gray-200 hover:text-[#2563EB] transition">
+          <lucide-icon [img]="Code" class="w-5 h-5"></lucide-icon>
+          <span>Skills</span>
+        </a>
+      </li>
+      <li class="rot">
+        <a  routerLink="/" fragment="contact" routerLinkActive="guy" [routerLinkActiveOptions]="{exact: false}" class="flex items-center gap-3 text-gray-800 dark:text-gray-200 hover:text-[#2563EB] transition">
+          <lucide-icon [img]="Mail" class="w-5 h-5"></lucide-icon>
+          <span>Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

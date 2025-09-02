@@ -1,0 +1,116 @@
+<!-- <section id="about" class="py-20 bg-white px-6 h-[100vh]">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-gray-900">About Me</h2>
+    <p class="mt-4 text-gray-600 leading-relaxed">
+      I specialize in creating intuitive, responsive, and visually appealing web applications. 
+      My focus is on clean design, smooth user experiences, and high-performance code.
+    </p>
+  </div>
+</section>  -->
+<!-- <section id="about" class="relative py-20 px-6 sm:px-10 lg:px-20 bg-white dark:bg-gray-900 transition-colors duration-500 h-[110vh] bg-green-600 flex flex-col j items-center flex-shrink-0">
+  <div class="w-full h-[50px]  flex items-center justify-center mb-[15px] ">
+    <span class="h-full w-[30%]  border-b-2 border-indigo-500 flex justify-center items-center text-3xl font-bold">
+      About<p class="text-indigo-500">Me</p> 
+    </span>
+  </div>
+
+  <div class="w-[80%] bg-red-600 h-[fit] mx-auto max-w-[900px] rounded-lg mb-[10px] py-6  flex justify-center   px-5 overflow-hidden min-h-[200px]">
+  I am a passionate software developer and technology enthusiast with a deep commitment to staying at the forefront of technological innovation. My journey in software development is driven by an insatiable curiosity for emerging technologies and a dedication to continuous learning.
+ I thrive in dynamic environments where new challenges and cutting-edge solutions are the norm. I embrace the rapid evolution of the tech landscape, viewing each new framework, language, or platform as an opportunity to expand my skill set and deliver more innovative solutions.
+
+
+  </div>
+  <div class="grid grid-cols-2 w-[80%] h-[40%] mx-auto gap-3 max-w-[900px] ">
+    <div class="bg-red-600 rounded-lg flex items-center justify-center  flex-col">
+      <span class="font-bold text-5xl">
+       {{years}}+
+      </span>
+      <h2 class="font-semibold">
+        Projects
+      </h2>
+
+    </div>
+    <div class="bg-black rounded-lg flex items-center justify-center  flex-col ">
+      <span class="font-bold text-5xl">
+        {{collaborations}}+
+      </span>
+      <h2 class="font-semibold">
+        Collaborations
+      </h2>
+    </div>
+    <div class="bg-blue-500 rounded-lg flex items-center justify-center  flex-col ">
+      <span class="font-bold text-5xl">
+        {{technologies}}+
+      </span>
+      <h2 class="font-semibold">
+        Technologies
+      </h2>
+    </div>
+    <div class="bg-yellow-500 rounded-lg flex items-center justify-center  flex-col ">
+      <span class="font-bold text-5xl">
+        {{openSourceContributions}}+
+      </span>
+      <h2 class="font-semibold">
+        Open Source Contributions
+      </h2>
+    </div>
+
+  </div>
+
+</section> -->
+<section id="about" class="relative py-20 px-6 sm:px-10 lg:px-20 bg-white dark:bg-gray-900 transition-colors duration-500 ">
+  <!-- Title -->
+ <div class="text-center mb-12 reveal">
+  <div class="flex items-center justify-center gap-4">
+    <!-- Outline Page Number -->
+    <span class="text-5xl sm:text-6xl font-extrabold text-transparent 
+                 dark:text-transparent stroke-text">
+      02
+    </span>
+
+    <!-- Title with underline -->
+    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 border-b-4 border-[#2563EB] pb-2 inline-block">
+      About <span class="text-[#2563EB]">Me</span>
+    </h2>
+  </div>
+</div>
+
+
+  <!-- About text -->
+  <div class="max-w-4xl mx-auto bg-gradient-to-r from-indigo-50 to-indigo-100 dark:from-gray-800 dark:to-gray-800 rounded-lg mb-10 p-6 sm:p-10 text-gray-700 dark:text-gray-300 leading-relaxed shadow-md reveal opacity-0 translate-y-10 transition-all duration-700">
+    I am a passionate software developer and technology enthusiast with a deep commitment 
+    to staying at the forefront of technological innovation. My journey in software development 
+    is driven by an insatiable curiosity for emerging technologies and a dedication to continuous learning.
+    <br /><br />
+    I thrive in dynamic environments where new challenges and cutting-edge solutions are the norm. 
+    I embrace the rapid evolution of the tech landscape, viewing each new framework, language, or platform 
+    as an opportunity to expand my skill set and deliver more innovative solutions.
+  </div>
+
+  <!-- Stats Grid -->
+  <div #counter class=" reveal max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2   2xl:grid-cols-2 gap-6">
+    <!-- Projects -->
+    <div class=" done rounded-xl flex flex-col items-center justify-center py-8 bg-gradient-to-r from-indigo-50 to-indigo-100 dark:from-gray-800 dark:to-gray-800 text-[#2563EB] shadow  transition">
+      <span class="font-extrabold text-5xl">{{ years }}+</span>
+      <h2 class="mt-2 font-semibold text-lg truncate w-full px-2 flex items-center justify-center sm:text-[23px] tiny:text-base xs:text-[23px] lg:text-[25px]">Projects</h2>
+    </div>
+
+    <!-- Collaborations -->
+    <div class=" done rounded-xl flex flex-col items-center justify-center py-8 bg-gradient-to-r from-indigo-50 to-indigo-100 dark:from-gray-800 dark:to-gray-800 text-[#2563EB] shadow  transition">
+      <span class="font-extrabold text-5xl">{{ collaborations }}+</span>
+      <h2 class="mt-2 font-semibold text-lg sm:text-[23px] tiny:text-base xs:text-[23px] truncate w-full px-2 flex items-center justify-center">Collaborations</h2>
+    </div>
+
+    <!-- Technologies -->
+    <div class="done rounded-xl flex flex-col items-center justify-center py-8 bg-gradient-to-r from-indigo-50 to-indigo-100 dark:from-gray-800 dark:to-gray-800 text-[#2563EB] shadow  transition">
+      <span class="font-extrabold text-5xl">{{ technologies }}+</span>
+      <h2 class="mt-2 font-semibold text-lg truncate w-full px-2 flex items-center justify-center sm:text-[23px] tiny:text-base xs:text-[23px]">Technologies</h2>
+    </div>
+
+    <!-- Open Source Contributions -->
+    <div class=" done rounded-xl flex flex-col items-center justify-center py-8  bg-gradient-to-r from-indigo-50 to-indigo-100  text-[#2563EB] shadow dark:from-gray-800 dark:to-gray-800  transition">
+      <span class="font-extrabold text-5xl">{{ openSourceContributions }}+</span>
+      <h2 class="mt-2 font-semibold text-lg truncate w-full px-2 sm:text-[23px] tiny:text-base xs:text-[23px] ">Open Source Contributions</h2>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,58 @@
+
+
+.slideup{
+  animation:slideup 1s ease-out;
+}
+@keyframes slideup {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0);
+    opacity:1 ;
+
+  }
+
+}
+
+.yeye{
+  background-image: url("https://images.unsplash.com/photo-1633259584604-afdc243122ea?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* Tiny Screens (Old Small Phones) - < 320px */
+@media (max-width: 319.98px) { 
+  /* Styles for very small devices */
+}
+
+/* Extra Small Devices (Mobile Portrait) - 320px to 575px */
+@media (min-width: 320px) and (max-width: 575.98px) { 
+  /* Smartphone portrait */
+}
+
+/* Small Devices (Mobile Landscape) - 576px to 767px */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  /* Smartphone landscape */
+}
+
+/* Medium Devices (Tablets) - 768px to 991px */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  /* iPad portrait, small tablets */
+}
+
+/* Large Devices (Small Laptops) - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  /* Small laptops, large tablets landscape */
+}
+
+/* Extra Large Devices (Desktops) - 1200px to 1399px */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+  /* Standard laptops and desktops */
+}
+
+/* XXL Devices (Large Screens) - 1400px+ */
+@media (min-width: 1400px) { 
+  /* Large monitors, TVs */
+}

@@ -1,0 +1,42 @@
+<section id="top" class="relative yeye min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Gradient overlay -->
+  <div class="absolute top-0 bottom-0 left-0 right-0 bg-black opacity-70 animate-gradient"></div>
+
+  <div class="z-[1000px] max-w-3xl px-6 sm:px-8 lg:px-12 text-white text-center items-center justify-center">
+    <h1 class="text-4xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl font-bold leading-tight animate-fadeInUp">
+      I’m Tomiwa, <br />
+      <span id="typed-text" class="text-[#2563EB]"></span>
+    </h1>
+    <p class="mt-4 text-2xl md:text-2xl text-gray-300 animate-fadeIn delay-200">
+      I build seamless and scalable web experiences in the JavaScript ecosystem. <br />
+      Turning complex ideas into efficient and engaging digital solutions.
+    </p>
+
+    <!-- Buttons -->
+    <div class="mt-8 flex flex-wrap sm:flex-nowrap gap-4 animate-fadeIn delay-500 items-center justify-center">
+      <!-- View Projects -->
+      <a routerLink="/" fragment="project"
+         class="flex items-center gap-2 px-6 py-3 border-2 border-[#2563EB] bg-[#2563EB] text-white font-medium rounded-lg shadow-lg hover:bg-[#1d4ed8] transition">
+         View Projects
+         <lucide-icon [img]="Arrowr" class="w-5 h-5"></lucide-icon>
+      </a>
+
+      <!-- Contact Me -->
+      <button routerLink="/" fragment="contact"
+              class="flex items-center gap-2 overflow-hidden relative px-6 py-3 border-2 border-[#2563EB] text-white font-medium rounded-lg before:bg-[#2563EB] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:-translate-x-80 hover:before:translate-x-0 before:transition-all before:hover:duration-200 hover:before:ease-linear">
+        <span class="relative flex items-center gap-2">
+          Hire Me
+          <lucide-icon [img]="BriefcaseIcon" class="w-5 h-5"></lucide-icon>
+        </span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Arrow Down -->
+  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce text-[#2563EB]">
+    <lucide-icon [img]="Arrowd" class="w-8 h-8"></lucide-icon>
+  </div>
+
+ 
+</section>

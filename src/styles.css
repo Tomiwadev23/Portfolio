@@ -1,1 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* You can add global styles to this file, and also import other style files */
+/*
+} */
+
+
+:root {
+  --bg:#E6F3FF;
+  --text-color:#000000;
+  --border-color:#bfdbfe;
+
+
+}
+
+.dark {
+  --bg:#1f2937;
+  --text-color:#ffffff;
+  --border-color:#000000;
+}
+
+@layer utilities {
+  .text-footer-fluid {
+    font-size: clamp(0.875rem,0.8rem + 0.3vw,1rem);
+
+  }
+
+  .text-footer-heading-fluid {
+    font-size:clamp(1rem,0.9rem + 0.4vw , 1.25rem)
+  }
+}
+  @layer base {
+html {
+  scroll-behavior: smooth;}
+  }
+
+
+  @layer components {
+    .list {
+      @apply w-[20%] max-w-[130px] flex items-center justify-center font-semibold text-black h-[80%] box-border transition  duration-300 hover:cursor-pointer dark:text-white;
+    }
+    .list:hover {
+      @apply  text-[#2563EB] border-b-[2px] border-[#2563EB] box-border;
+    }
+    .rot{
+      @apply  p-2 rounded-[30px] transition-transform duration-300 ease-in-out
+    }
+    .rot:hover{
+      @apply bg-gray-100 dark:bg-gray-800 translate-x-1 
+    }
+
+    .div-sec:hover {
+      transform: translateX(4px);
+
+    }
+  }
+  @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+.animate-fadeInUp {
+  animation: fadeIn 1.2s ease forwards;
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+}
+
+.delay-200 { animation-delay: 0.2s; }
+.delay-500 { animation-delay: 0.5s; }
+
+
+
+
+  
+
