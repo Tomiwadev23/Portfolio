@@ -59,10 +59,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Gadget3.0:build:production"
+              "buildTarget": "TomiDev:build:production"
             },
             "development": {
-              "buildTarget": "Gadget3.0:build:development"
+              "buildTarget": "TomiDev:build:development"
             }
           },
           "defaultConfiguration": "development"
