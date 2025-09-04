@@ -43,7 +43,7 @@ export class Project implements OnInit {
         name: 'Lg-utility-class',
         description: 'Modern utility class for responsive design and ionic components.',
         images: [
-          'assets/m1.png',
+          'assets/utility one.png',
           'https://images.unsplash.com/photo-1756550120927-dede81d8b2bb?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           'assets/m3.png'
         ],
@@ -56,15 +56,16 @@ export class Project implements OnInit {
         name: 'Portfolio Website',
         description: 'A personal portfolio to showcase my skills and projects.',
         images: [
-          'assets/b1.jpg',
-          'https://images.unsplash.com/photo-1756550120927-dede81d8b2bb?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-          'assets/b3.png'
+          'assets/port 2.png',
+          'assets/port 3.png',
+          'assets/port 4.png',
+          'assets/portx.png'
         ],
         link: 'https://github.com/Tomiwadev23/MusicBox3.0',
         languages: [
-          { name: 'HTML', percent: 50, color: '#F97316' },
-          { name: 'CSS', percent: 30, color: '#2563EB' },
-          { name: 'JavaScript', percent: 20, color: '#FACC15' }
+          { name: 'HTML', percent:41.8 , color: '#F97316' },
+          { name: 'CSS', percent: 18.6, color: '#2563EB' },
+          { name: 'TypeScript', percent: 39.6, color: '#2563EB' }
         ]
       },
       {

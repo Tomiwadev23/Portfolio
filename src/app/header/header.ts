@@ -2,18 +2,18 @@ import { AfterViewInit, Component, ElementRef, inject, Inject, OnInit, signal, V
 import { RouterLink, RouterLinkActive, RouterOutlet, Scroll } from '@angular/router';
 import { Router } from '@angular/router';
 import { Services } from '../services';
-import { Home } from '../home/home';
+// import { Home } from '../home/home';
 import { Theme } from '../theme';
 import { About } from '../about/about';
 import { Project } from '../project/project';
-import {  Menu, ArrowLeft, ArrowRight, ChevronDown, Briefcase, Mail , Phone, LucideAngularModule, LucidePhone,Moon, Sun, Code, Folder, User } from 'lucide-angular';
+import {  Menu, ArrowLeft, ArrowRight, ChevronDown, Briefcase, Mail , Phone, LucideAngularModule, LucidePhone,Moon, Sun, Code, Folder, User, Home } from 'lucide-angular';
 import { DataService } from '../data-service';
 import { NgIf } from '@angular/common';
 import { Skills } from '../skills/skills';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink,RouterLinkActive,RouterOutlet,Home,About,Project,Skills, LucideAngularModule,NgIf],
+  imports: [RouterLink,RouterLinkActive,RouterOutlet,About,Project,Skills, LucideAngularModule,NgIf],
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
@@ -28,6 +28,7 @@ export class Header implements AfterViewInit,OnInit{
       User= User;
       Folder= Folder;
       Code= Code;
+      home=Home;
 
         size = 32;
 
