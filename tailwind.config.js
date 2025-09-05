@@ -24,6 +24,9 @@ theme: {
     fontSize: {
       'lg': '2.125rem',
     },
+      fontFamily: {
+      sans: ['Inter', 'ui-sans-serif', 'system-ui']
+    }
  
     
     }
